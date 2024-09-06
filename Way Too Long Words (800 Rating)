@@ -1,0 +1,9 @@
+number_of_words = int(input())
+for i in range(number_of_words):
+    word = input()
+    no_of_char = len(word)
+    if no_of_char > 10:
+        no = no_of_char-2
+        print(f"{word[0]}{no}{word[-1]}")
+    else :
+        print(word)
