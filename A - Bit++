@@ -1,0 +1,10 @@
+x = int(0)
+n = int(input(''))
+if 1<=n<=150:
+    for i in range(n):
+        s1 = input('')
+        if s1 == 'X++' or s1 == '++X':
+            x = x+1
+        if s1 == 'X--' or s1 == '--X':
+            x = x-1
+print(x)
