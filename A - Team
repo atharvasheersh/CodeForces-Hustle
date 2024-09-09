@@ -1,0 +1,15 @@
+n = int(input(''))
+x_count = 0
+if 1<=n<=1000:
+    for i in range(n):
+        n1, n2, n3 = input("").split(' ')
+        if n1 == '0' and n2 == '1' and n3 == '1':
+            x_count += 1
+        if n1 == '1' and n2 == '1' and n3 == '1':
+            x_count += 1
+        if n1 == '1' and n2 == '0' and n3 == '1':
+            x_count += 1
+        if n1 == '1' and n2 == '1' and n3 == '0':
+            x_count += 1
+
+print(x_count)
