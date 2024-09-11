@@ -1,0 +1,12 @@
+n = int(input())
+if 1 <= n <= 100:
+    a = input().split()
+    num_string = list(a)
+    arc = list(num_string)
+    num_string = [str(i) for i in range(1, n+1)]
+    r = []
+    for no in num_string:
+        index = arc.index(no)
+        r.append(index+1)
+    result = ' '.join(map(str, r))
+    print(result)
