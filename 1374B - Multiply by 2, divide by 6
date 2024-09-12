@@ -1,0 +1,20 @@
+t = int(input())
+if 1 <= t <= 20000:
+    result = []
+    for i in range(t):
+        n = int(input())
+        if 1 <= n <= 10**9:
+            x_count = 0
+            while n != 1:
+                if n % 6 == 0:
+                    n = n // 6
+                    x_count += 1
+                else:
+                    if n % 3 != 0:
+                        x_count = -1
+                        break
+                    n = n * 2
+                    x_count += 1
+            result.append(x_count)
+    for res in result:
+        print(res, end="\n")
