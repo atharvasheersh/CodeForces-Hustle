@@ -1,0 +1,13 @@
+t = int(input())  
+n = list(map(int, input().split()))  
+if 2 <= t <= 100:
+    total = len(n)
+    maximum = max(n)
+    minimum = min(n)
+    max_index = n.index(maximum)
+    min_index = len(n) - 1 - n[::-1].index(minimum)
+    if max_index > min_index:
+        count = max_index + (total - 1 - min_index) - 1
+    else:
+        count = max_index + (total - 1 - min_index)
+    print(count)
